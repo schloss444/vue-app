@@ -1,4 +1,6 @@
 # vue-app
+pseudo : schloss444
+url : https://schloss444.github.io/vue-app/
 
 ## Project setup
 ```
