@@ -1,3 +1,6 @@
 module.exports = {
-    publicPath: 'https://schloss444.github.io/vue-app/'
-  }
+  outputDir: 'docs',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? 'https://schloss444.github.io/vue-app/'
+    : '/'
+}
