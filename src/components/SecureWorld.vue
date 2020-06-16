@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div class="secure">
     <h1>{{ msg }}</h1>
     
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'LoginWorld',
+  name: 'SecureWorld',
   props: {
     msg: String
   }
@@ -28,6 +28,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #b9a342;
+  color: #42b983;
 }
 </style>

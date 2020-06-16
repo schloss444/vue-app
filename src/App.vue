@@ -3,7 +3,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/login">Login</router-link> 
+      <router-link to="/login">Login</router-link>
+      <button id="btn_disconnect" @click="disconnect()">Deconnexion</button>
     </div>
     <router-view/>
   </div>
@@ -29,5 +30,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#nav button {
+  font-weight: bold;
+  color: blue;
+  margin-left: 20px;
 }
 </style>
