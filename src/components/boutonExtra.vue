@@ -1,8 +1,8 @@
 <template>
   <div class="btn-primary">
-    <h1>message en dur du composant bouton Extra</h1>
+    <h6 style="color: lightblue">composant bouton Extra</h6>
     
-    <button> {{ msg }} </button>
+    <button :style="{'background-color': param.couleur}" @click="$emit('extraBtn', 'red')" v-on:mouseover="$emit('extraMouseOver', 'lightgray')" > {{ param.titre }} </button>
 
     
   </div>
@@ -12,7 +12,24 @@
 export default {
   name: 'boutonExtra',
   props: {
-    msg: String
+    msg: String,
+    param: Object
+  },
+  watch: {
+
+  },
+  data () {
+    return {
+
+    }
+  },
+  computed: {
+
+  },
+  methods: {
+    extra: function () {
+      // utilisée ?
+    }
   }
 }
 </script>

@@ -2,7 +2,7 @@
   <div class="secure">
     <img alt="Vue logo" src="../assets/luc.jpg" style="width: 250px">
     <SecureWorld msg="Espace sécurisé ... by Luc"/>
-    <boutonExtra msg="bouton Extra SECURE"/>
+    <boutonExtra :param="param" @extraBtn="clic(param, $event)" @extraMouseOver="hover(param, $event)"/>
   </div>
 </template>
 
@@ -16,6 +16,24 @@ export default {
   components: {
     SecureWorld,
     boutonExtra
+  },
+  data () {
+    return {
+      param: {
+        titre: "confirmer",
+        couleur: "yellow"
+      }
+    }
+  },
+  methods: {
+    clic(param, autre) {
+        alert('Clic ' + param.couleur + ' ' + param.titre);
+        param.couleur = autre
+    },
+    hover(param, autre) {
+      param.couleur = autre
+    },
   }
+
 }
 </script>

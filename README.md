@@ -2,7 +2,9 @@
 pseudo : schloss444
 url : https://schloss444.github.io/vue-app/
 
-L'application comporte un espace protégé fonctionnel
+L'application comporte un espace protégé fonctionnel (admin, admin)
+
+et AUSSI un composant boutonExtra sur les 2 vues : secure et about avec des couleurs et des "arguments" de passage qui varient ..... !!!!!
 
 ## Project setup
 ```

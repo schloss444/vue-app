@@ -1,8 +1,7 @@
 <template>
   <div class="secure">
     <h1>{{ msg }}</h1>
-
-    ici la div de ce composant SecureWorld
+    <p>----</p>
     
   </div>
 </template>
