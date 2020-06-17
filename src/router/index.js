@@ -33,12 +33,13 @@ Vue.use(VueRouter)
 
       console.log(to);
       console.log(from);
-      // console.log('alors ?');
-      console.log(this.router.app.connect);
+      console.log('alors 1 ?');
+      console.log(router.app.$root.connect);
 
       console.log('alors 2 ?');
-      if (this.router.app.connect != 'connected') {
-        next("login")
+      if (!router.app.$root.connect) {
+        next({name: 'Login'})
+        //next('/login')
       } else {next()}
     
     })
@@ -52,7 +53,7 @@ const router = new VueRouter({
 
 // router.beforeEach ((to, from, next) => {
 
-//   if ((to === 'secure') && (this.$router.params.connect != 'connected')) {
+//   if ((to === 'secure') && (!router.app.$root.connect)) {
 //     next("login")
 //   } else {next()}
 

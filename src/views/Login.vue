@@ -1,9 +1,10 @@
 <template>
-
+  
   <div class="login">
   
     <img alt="Vue logo" src="../assets/logo.png">
     <LoginWorld msg="Se connecter"/>
+    etat connexion : {{this.$root.connected}}
 
 <form>
 <div class="form-example" id="main">
@@ -49,12 +50,13 @@
       login() {
         if ((this.pseudo === 'admin') && (this.password === 'admin')) {
           console.log('connect ?');
-          console.log(this.app)
-          this.router.app.connect = 'connected';
+          // console.log(this.$root.connected)
+          console.log(this.$root.connect)
+          this.$root.connect = true;
           this.$router.push({'name': 'Secure'});
-        } else {this.router.app.connect = '';}
+        } else {this.$root.connect = false;}
         console.log('toujours connecté ?');
-        console.log(this.router.app.connect);
+        console.log(this.$root.connect);
       }
     }
 }
