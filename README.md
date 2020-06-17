@@ -2,6 +2,8 @@
 pseudo : schloss444
 url : https://schloss444.github.io/vue-app/
 
+L'application comporte un espace protégé fonctionnel
+
 ## Project setup
 ```
 npm install
