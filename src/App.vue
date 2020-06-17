@@ -18,7 +18,6 @@ export default {
     disconnect: function () {
           this.$root.connect =  false,
           this.$router.push({'name': 'Home'});
-
     }
 
   }
