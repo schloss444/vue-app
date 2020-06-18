@@ -3,16 +3,11 @@
     <h1>About Luc ... </h1>
     <boutonExtra :param="param" @extraBtn="clic(param, 'pink')" @extraMouseOver="hover(param, 'lightgreen')"/>
     <flickity ref="flickity" :options="flickityOptions">
-        <div class="carousel-cell" v-for="(picture,index) in pictures" :key="index">
-            <p>{{picture.id}}</p>
-            <img v-if="picture.type == 'img'" v-bind:src = "picture.url" v-bind:alt = "picture.alt">
-            <audio v-if="picture.type == 'audio'" v-bind:src = "picture.url" v-bind:alt = "picture.alt"></audio>
-            <video v-if="picture.type == 'video'" v-bind:src = "picture.url" v-bind:alt = "picture.alt"></video>
-        </div>
-        <!-- <div class="carousel-cell">2</div>
+        <div class="carousel-cell">1</div>
+        <div class="carousel-cell">2</div>
         <div class="carousel-cell">3</div>
         <div class="carousel-cell">4</div>
-        <div class="carousel-cell">5</div> -->
+        <div class="carousel-cell">5</div>
       </flickity>
       <!-- if you don't want to use the buttons Flickity provides -->
       <button @click="previous()">Custom Previous Button</button>
@@ -23,13 +18,13 @@
 <script>
 // @ is an alias to /src
 import boutonExtra from '@/components/boutonExtra.vue'
-import Flickity from 'vue-flickity';
+import flickity from '@/components/flickity.vue';
 
 export default {
   name: 'About',
   components: {
     boutonExtra,
-    Flickity
+    flickity
   },
   data () {
     return {
@@ -44,42 +39,10 @@ export default {
         wrapAround: true
         
         // any options from Flickity can be used
-      },
-      pictures: [
-        {
-          id: 1,
-          url: "https://tenor.com/view/pk07-gif-8070642",
-          alt: "image fleurie",
-          type: "img"
-      
-        },
-        {
-          id: 2,
-          url: "../../dist/audio/San Francisco - Maxime Le Forestier.mp3",
-          alt: "audio maison bleue",
-          type: "audio"
-      
-        },
-        {
-          id: 3,
-          url: "https://tenor.com/view/rage-work-pc-stressed-pissed-gif-15071896",
-          alt: "video de furieux",
-          type: "video"
-      
-        },
-        {
-          id: 4,
-          url: "",
-          alt: "bonjour les amis",
-          type: "img"
-      
-        }
-
-      ]
-
       }
 
-    },
+    }
+  },
   methods: {
     clic(param, autre) {
         alert('Clic ' + param.couleur + ' ' + param.titre);
