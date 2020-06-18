@@ -2,6 +2,7 @@
   "name": "vue-app",
   "version": "0.1.0",
   "private": true,
+  "theme_color": "#8A2BE2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

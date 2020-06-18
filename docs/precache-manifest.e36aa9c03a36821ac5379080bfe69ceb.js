@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://schloss444.github.io/vue-app/img/luc.cdc08c11.jpg"
   },
   {
-    "revision": "d6ed75ecb93067f16aabf58575bac289",
+    "revision": "6a1fcef5646179d7f5dc0b4d368232bb",
     "url": "https://schloss444.github.io/vue-app/index.html"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://schloss444.github.io/vue-app/js/chunk-vendors.516e43c9.js"
   },
   {
-    "revision": "a7bb829f05709f04c4cc8f0bb0289d89",
+    "revision": "f5685c6e0bf0093aed4d5a749834be32",
     "url": "https://schloss444.github.io/vue-app/manifest.json"
   },
   {
