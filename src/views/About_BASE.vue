@@ -2,6 +2,7 @@
   <div class="about">
     <h1>About Luc ... </h1>
     <boutonExtra :param="param" @extraBtn="clic(param, 'pink')" @extraMouseOver="hover(param, 'lightgreen')"/>
+    
     <flickity ref="flickity" :options="flickityOptions">
         <div class="carousel-cell">1</div>
         <div class="carousel-cell">2</div>

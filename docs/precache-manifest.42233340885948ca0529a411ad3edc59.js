@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f5ef1d2abdbeaaf5b12",
+    "revision": "6620dfeb035586954e39",
     "url": "https://schloss444.github.io/vue-app/css/about.d93480aa.css"
   },
   {
-    "revision": "aa3a0dd6ef70a72bb0f5",
+    "revision": "12ca34d62936c40e3f14",
     "url": "https://schloss444.github.io/vue-app/css/app.3897d836.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://schloss444.github.io/vue-app/img/luc.cdc08c11.jpg"
   },
   {
-    "revision": "28a351f04ca497b29d18a8efd847059f",
+    "revision": "2c49e7cb619688bfb32efc1d1fac2904",
     "url": "https://schloss444.github.io/vue-app/index.html"
   },
   {
-    "revision": "6f5ef1d2abdbeaaf5b12",
-    "url": "https://schloss444.github.io/vue-app/js/about.dc7a1531.js"
+    "revision": "6620dfeb035586954e39",
+    "url": "https://schloss444.github.io/vue-app/js/about.b0fdce6d.js"
   },
   {
-    "revision": "aa3a0dd6ef70a72bb0f5",
-    "url": "https://schloss444.github.io/vue-app/js/app.c50d7b79.js"
+    "revision": "12ca34d62936c40e3f14",
+    "url": "https://schloss444.github.io/vue-app/js/app.3aa9b9e1.js"
   },
   {
     "revision": "6c7f5afb08f71f2a0156",
